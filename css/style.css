@@ -49,3 +49,51 @@
 .nav ul li:hover::after{
     width: 100%;
 }
+.banar-content{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: whitesmoke;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banar-content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.banar-content p{
+    font-weight: 100;
+    margin: 20px auto;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 16px 0;
+    margin: 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 145, 0);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    background: rgb(255, 145, 0);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
